@@ -1,0 +1,86 @@
+#foto_orações  {
+  display: flex;
+  justify-content: center;
+  
+}
+
+#foto_orações img{
+  align-self: center;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+/*hambuguer menu */      
+
+.menu {
+
+  padding: 10px;
+  
+  position: relative;
+}
+
+.hamburguer {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .hamburguer {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
+
+  .links.show {
+    display: flex;
+  }
+}
+
+ /* fim hambuguer menu */ 
+
+
+
+@media (max-width: 600px){
+ 
+
+
+section{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+p{
+  text-align: justify;
+width: 88%;
+}
+h1,h2{
+  width: 88%;
+}
+}

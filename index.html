@@ -1,32 +1,294 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="estilo.css">
-</head>
-<body>
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Santissimo Sacramento</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css/style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css/corrosel.css">
+    <link rel="stylesheet" type="text/css" href="./js/script.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+
+  </head>
+  <body>
+    
+    <header>
+    <a  target="_blank" href="https://evangeli.net/evangelho?utm_source=banner&utm_medium=links&utm_campaign=2025" title="Meditando o Evangelho de hoje - Homilias Católicas do Evangelho do Dia" target="_blank">
+    <img src="//evangeli.net/_static/img/evangeli_banner.png" width="240px" heigth="60px" /></a>
+     
+
+       <h1 id="logo_nome">
+    Santíssimo Sacramento
+    </h1>
+
+    
+    
+  
+    <nav class="menu">
+      
+       
+      <ul id="menu-links" class="links">
+       <img id="logo" src="./imagens/santissimo-ostenssorio.webp" alt=""> 
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sacramento.html">O Sacramento</a></li>
+        <li><a href="orações.html">Orações</a>
+        </li>
+        <li><a href="adoração.html">Adoração</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Contato</a></li>
+  <img id="logo" src="./imagens/santissimo-ostenssorio.webp" alt=""> 
+      </ul>
+    </nav>
+  </header>
+
+
+
+
+
+<nav class="menu">
+  <div class="hamburguer" onclick="toggleMenu()">☰</div>
+ 
+</nav>
+ 
+
+
+  
+    <script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu-links');
+    menu.classList.toggle('show');
+  }
+</script> 
+
+        <!-- Slideshow container -->
+
+        <div id="apresentação">
+
+
+         <section  id="section-slide">
+
+        <div class="slideshow-container">
+
+          
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="./imagens/santissimo-catequistasbrasil-1.jpg" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="./imagens/santissimo.jpg" style="width:100%">
+            <div class="text"></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext"> </div>
+            <img src="./imagens/santissimo2.jpeg" style="width:100%">
+            <div class="text"></div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="./imagens/jesus-no-santissimo-sacramento.webp" style="width:100%">
+            <div class="text"></div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <img src="./imagens/SantisimoSacramento_Unsplash_240320.webp" style="width:100%">
+            <div class="text"></div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+          </div>
+
+
+
+
+
+
+
+          </section>
+
+          <div id="p_apresentação">
+            <p>
+              <p>
+      Meu Senhor e meu Deus, afasta de mim tudo o que me afasta de Ti; meu Senhor e meu Deus, dá-me tudo o que me aproxima de Ti; meu Senhor e meu Deus, tira-me de mim próprio para me dar inteiramente a Ti»<span>
+        (S. Nicolau de Flüe)
+      </span> 
+    </p>
+            </p>
+          </div>
+
+
+
+        </div>
+          <script>
+          let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+<!--FIM -- Slideshow container -->
+
+<section class="banner">
+    <h2>"Adoremos o Cristo presente no Santíssimo Sacramento do Altar"</h2>
+
+    <p>
+      Eu Te adoro, ó Cristo, Deus no Santo Altar. Em Teu Sacramento vivo a palpitar!
+Dou-Te partilha, vida e coração, pois de amor me inflamo na contemplação!
+Tato e vista falham, bem como o sabor; só por meu ouvido tem a fé vigor. Creio no que disseste, ó Jesus, meu Deus!
+Verbo da Verdade vindo a nós dos céus!
+Tua divindade não se viu na cruz, nem a humanidade vê-se aqui, Jesus!
+Ambas eu confesso como o bom ladrão, e um lugar espero na eterna mansão!
+Não me deste a dita, como a São Tomé, de tocar-­Te as chagas, mas eu tenho fé!
+Faze que ela cresça como o meu amor, e a minha esperança tenha novo ardor!
+Dos Teus sofrimentos é memorial esse Pão de Vida, Pão Celestial!
+Dele eu sempre queira mais me alimentar, sentir-­Lhe a doçura divinal sem par!
+Bom Pastor piedoso, Cristo, meu Senhor, lava no Teu Sangue a mim, tão pecador!
+Pois que uma só gota pode resgatar do pecado o mundo e o purificar!
+Ora Te contemplo sob espesso véu, mas desejo ver-­Te, Bom Jesus, no Céu, face a face.
+Um dia, poderei de Ti gozar, nessa doce pátria, e sem fim Te amar.
+    </p>
+    <p>
+      Oração retirada do livro "Uma visita ao Santíssimo Sacramento"
+      <a target="_blank" href="https://www.amazon.com.br/Uma-Visita-ao-Santu%C3%A1rio-Sacramentado/dp/8576771373/ref=asc_df_8576771373?mcid=e0be5484c700326694d71481c707d216&tag=googleshopp00-20&linkCode=df0&hvadid=709857900159&hvpos=&hvnetw=g&hvrand=10829055064819157959&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9197540&hvtargid=pla-1208140538136&psc=1&language=pt_BR&gad_source=1">link do livro</a>
+    </p>
+  </section>
+<hr >
+  <section id="secaoinformativa">
+    <h2>
+      O que é O Sacremento da Eucaristia?
+    </h2>
+
+    <p>
+      O Sacramento da Eucaristia é o memorial morte e ressurreição do Senhor, por isso nós a celebramos como Ele nos instruiu — até que volte. É o próprio Corpo e Sangue de Cristo dentro de nós. Assim como precisamos do alimento corporal, a nossa alma necessita desse alimento espiritual para viver.    
+    </p>
+ 
+     <p> 
+       Além disso, muitas são as graças e os frutos que recebemos quando comungamos. Alguns santos, como São Felipe Néri, enfatizavam que a devoção ao Santíssimo Sacramento é a única maneira de manter a pureza.
+      </p>
+      <h4>Fonte</h4>
+      <a target="_blank" href="https://bibliotecacatolica.com.br/blog/formacao/sacramento-da-eucaristia/?srsltid=AfmBOoqPioUWO9-2buiNs-ZTObNVvE4g-L1yYNqCZJwt_BHgH007eFtM">Minha biblioteca Católica</a>
+      
+      <h4>O que diz o Catecismo da Igreja Católica sobre a Eucaristia?</h4>
+
+      <p>
+        
+       É o próprio sacrifício do Corpo e do Sangue do Senhor Jesus, que Ele instituiu para perpetuar pelos séculos até o Seu retorno, o sacrifício da Cruz, confiando assim, à sua Igreja, o memorial de sua Morte e Ressurreição. É o sinal da unidade, o vínculo da caridade, o banquete pascal, no qual se recebe Cristo, a alma é coberta de graça e é dado o penhor da vida eterna.</p>
+        <p> 
+        Quando Cristo instituiu a Eucaristia? Instituiu-a na Quinta-feira Santa, “na noite em que ia ser entregue” (1Cor 11,23), celebrando com Seus apóstolos a Última Ceia.
+     </p>
+       
+
+      <h4>
+        Como Jesus está presente na Eucaristia?
+      </h4>
+
+    <p>
+      Jesus Cristo está presente na Eucaristia de modo único e incomparável. Está presente, com efeito, de modo verdadeiro, real, substancial: com Seu Corpo e Seu Sangue, com Sua alma e divindade. Nela está, portanto, presente de modo sacramental, ou seja, sob as espécies eucarísticas do pão e do vinho, Cristo todo inteiro: Deus e homem.
+    </p>
+
+    <h4>Fonte</h4>
+     <a target="_blank" href="https://formacao.cancaonova.com/igreja/catequese/o-que-diz-o-catecismo-da-igreja-catolica-sobre-a-eucaristia/">Canção Nova</a>
+<hr >
+    <h2>
+      Sua importância
+    </h2>
+
+    <p>
+      O mundo seria melhor se os cristãos que já recebem Jesus levassem a sério essa realidade: nós nos tornamos a extensão viva do Cristo vivo que celebramos. O mundo tem de ser melhor a partir de nossa vivência eucarística. A Eucaristia nos ampara nas dificuldades, na luta pela pureza, no combate aos vícios e, sobretudo, aumenta em nós a fé, a esperança e a caridade. A Eucaristia é a saúde da alma e do corpo, remédio para todas as enfermidades espirituais.
+    </p>
+    <h4>Fonte</h4>
+    <a target="_blank" href="https://www.fatimamacae.com.br/post/o-sacramento-da-eucaristia-%C3%A9-o-%C3%A1pice-de-toda-a-vida-crist%C3%A3">Fátima Macae</a>
+<hr >
+    
+
+
+  </section>
+
+  <section id="destaquedeoracoes">
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Devotos do Santíssimo Sacramento</p>
+    <p>Ismael Barcelos</p>
+  </footer>
+
+
+
+
+    
+
+
+  
   
 
-  <h1> fsfslfmslfmsflmf</h1>
+  
+  
 
-  <div>dffsfsfs</div>
 
-  <dialog>dawdadawdwad</dialog>
 
-  <div>
-    <div>
-      <dialog></dialog>
 
-      <dialog>
-        <dialog>
-          <div></div>
-          <div></div>
-          <div>alou</div>
-        </dialog>
-      </dialog>
-    </div>
-  </div>
+
+
+    
+
+  
+
+
+
+
+    
+
+
+
+
+
+ <!--pagina -->
+    <!--java -->
+    <script src="https://kit.fontawesome.com/7454a8b3ff.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 </body>
 </html>

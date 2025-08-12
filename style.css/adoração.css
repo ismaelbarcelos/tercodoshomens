@@ -1,0 +1,32 @@
+#adoração{
+  display: flex;
+  justify-content: center;
+}
+
+#adoração img{
+  
+  align-self: center;
+  height: auto;
+  max-width: 40%;
+  min-width: 80%;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 600px){
+ 
+
+
+section{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+p{
+  text-align: justify;
+width: 88%;
+}
+}
