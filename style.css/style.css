@@ -8,14 +8,16 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background-color: #F8F6F0;
+  background-color:#F8F6F0;
   color: #333333;
 }
 
 header {
   background-color:#F8F6F0;
-  color: #800020;
+  /*color: #800020;*/
+  color:#3972ed;
   padding: 1rem;
+  
 
 }
 
@@ -48,17 +50,26 @@ text-decoration: underline;
   font-weight: 600;
   font-size: 4.5em;
  text-align: center;
+ }
+ #nome_paroquia{
+  font-family: 'Dancing Script';
+  font-weight: 300;
+  font-size: 2.5em;
+ text-align: center;
+ margin-top: -50px;
  
 }
-#logo{
-  
+.logo{
   width: 10%;
+  border-radius: 100%;
 }
 #apresentação{
   display: flex;
   justify-content: space-around;
-
 }
+ #apresentação h2{
+  margin-left: 30px;
+ }
 #p_apresentação {
   flex: 1;
   align-self: center;
@@ -68,7 +79,8 @@ text-decoration: underline;
   font-family: 'Dancing Script';
   font-weight: 600;
   font-size: 2.0em;
-  padding-right:52px;
+  padding-right:50px;
+  text-align: justify;
 }
 
 section {
@@ -197,6 +209,10 @@ p{
 
   .links.show {
     display: flex;
+  }
+  #section-slide{
+    border:1px solid red;
+    width: 510px;
   }
 }
 

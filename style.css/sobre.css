@@ -1,0 +1,68 @@
+
+
+#principal h1{
+
+}
+
+
+
+
+
+#sobre img{
+  width: 80%;
+  height: 80%;
+}
+
+.sobreimg2{ 
+  width: 58%;
+  height: 58%;
+  margin-left: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px){
+ 
+
+
+section{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+p{
+  text-align: justify;
+width: 88%;
+}
+#sobre p{
+  width: 84%;
+  margin-left:-26px;
+  
+}
+.sobreimg2{ 
+  width: 80%;
+  height: 80%;
+  margin-left: 23px;
+}
+
+#principal h1{
+  width: 400px;
+}
+
+}
