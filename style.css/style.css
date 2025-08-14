@@ -141,6 +141,19 @@ section a:hover {
 
 text-decoration: underline;
 }
+#maisFotos{
+  background: #F8F6F0;
+  display: flex;
+  flex-wrap:wrap ;
+}
+#maisFotos img{
+  border-radius: 5px;
+box-shadow: 1px 1px 3px #333333;
+margin-bottom: 10px;
+margin-right: 10px;
+  width: 450px
+
+}
 
 
 footer {
@@ -244,6 +257,12 @@ p{
     width: 450px;
     margin-left: -60px;
   }
+  #maisFotos img{
+    width: 350px;
+margin-left: -20px;
+
+
+}
 }
 
  /* fim hambuguer menu */ 
