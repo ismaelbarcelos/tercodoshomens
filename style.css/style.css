@@ -240,6 +240,10 @@ p{
     
     width: 510px;
   }
+  #p_apresentação{
+    width: 450px;
+    margin-left: -60px;
+  }
 }
 
  /* fim hambuguer menu */ 

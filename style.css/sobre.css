@@ -65,4 +65,13 @@ width: 88%;
   width: 400px;
 }
 
+#principal h1,h3{
+  width: 340px;
+    margin-left: -15px;
+}
+#sobre p{
+  width: 340px;
+  margin-left: -50px;
+}
+
 }

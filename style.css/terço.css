@@ -1,0 +1,16 @@
+@media (max-width: 600px){  
+  #rezarterço{
+    width: 350px;
+    margin-left:-20px ;
+  }
+  li{
+    width: 330px;
+  }
+  #rezarterço p{
+    width: 340px;
+  }
+
+  header{
+    margin-left: 30px;
+  }
+}
