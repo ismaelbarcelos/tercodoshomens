@@ -45,6 +45,28 @@ color:#800020 ;
 text-decoration: underline;
 }
 
+#lado_logo{
+  display: flex;
+  flex-direction: row;
+  
+}
+#lado_logo p{
+  width: 200px;
+  font-family: 'Merriweather';
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color :#333333;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+#lado_logo a{
+  font-family: 'Merriweather';
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color:#4A90E2;
+  text-decoration: dotted;
+}
+
 #logo_nome{
   font-family: 'Dancing Script';
   font-weight: 600;
@@ -90,6 +112,10 @@ section {
   padding: 2rem;
   text-align: justify;
   
+}
+.img_Igreja{
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px #333333;
 }
 
 p{

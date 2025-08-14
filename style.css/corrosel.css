@@ -4,7 +4,8 @@
 /* Slideshow container */
 #section-slide img{
   flex: 1;
-  border-radius: 10px;
+  
+  
 }
 
 
@@ -12,6 +13,7 @@
   max-width:80%;
   position: relative;
  margin: auto;
+ box-shadow: 1px 1px 9px #333333;
   
 }
 
@@ -77,6 +79,7 @@
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  
 }
 
 .active, .dot:hover {
@@ -98,5 +101,9 @@
 
 @media (max-width: 600px){
  
+.dot {
+  display: none;
+  
 
 }
+ }
