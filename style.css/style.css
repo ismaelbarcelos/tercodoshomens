@@ -103,6 +103,7 @@ text-decoration: underline;
   font-size: 2.0em;
   padding-right:50px;
   text-align: justify;
+  
 }
 
 section {
@@ -118,14 +119,34 @@ section {
   box-shadow: 2px 2px 2px #333333;
 }
 #secaoinformativa{
-  background: #4a4e51;
-  color: #F8F6F0;
-  width: 500px;
-  margin-left: 30px;
+  
 }
+#secaoinformativa img{
+  margin-left: 30px; 
+  border-radius: 5px;
+ }
+
 .encontros{
   margin: 30px;
 }
+
+#flex3colunas{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 9px;
+
+}
+#flex3colunas > div{
+  flex:1;
+  padding: 20px;
+ 
+}
+
 
 p{
   font-family: 'Merriweather';
@@ -151,16 +172,21 @@ section a:hover {
 text-decoration: underline;
 }
 #maisFotos{
-  background: #F8F6F0;
+  margin: auto;
+  background: #ffffff;
   display: flex;
   flex-wrap:wrap ;
+  justify-content: center;
+ border-radius: 9px;
 }
 #maisFotos img{
   border-radius: 5px;
 box-shadow: 1px 1px 3px #333333;
 margin-bottom: 10px;
 margin-right: 10px;
-  width: 450px
+  width: 450px;
+  
+
 
 }
 
