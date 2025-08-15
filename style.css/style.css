@@ -117,6 +117,15 @@ section {
   border-radius: 8px;
   box-shadow: 2px 2px 2px #333333;
 }
+#secaoinformativa{
+  background: #4a4e51;
+  color: #F8F6F0;
+  width: 500px;
+  margin-left: 30px;
+}
+.encontros{
+  margin: 30px;
+}
 
 p{
   font-family: 'Merriweather';
@@ -261,8 +270,11 @@ p{
     width: 350px;
 margin-left: -20px;
 
-
 }
-}
+#secaoinformativa{
+  width: 340px;
+  margin-left: 20px;
+}  
+ }
 
  /* fim hambuguer menu */ 
