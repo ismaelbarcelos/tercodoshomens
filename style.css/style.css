@@ -258,12 +258,15 @@ p{
 
 .links {
   list-style: none;
-  display: flex;
+  display:flex;
+  
   gap: 15px;
   margin-top: -80px;
   margin-left: 30px;
   padding: 20px;
+ 
 }
+
 
 
 
