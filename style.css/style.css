@@ -243,8 +243,8 @@ p{
 
 /*hambuguer menu */      
 
-.menu {
-
+.menuHamburguer {
+display: block;
   padding: 10px;
   
   position: relative;
@@ -256,15 +256,21 @@ p{
   display: none;
 }
 
-.links {
+.lisnks {
   list-style: none;
   display:flex;
   
   gap: 15px;
-  margin-top: -80px;
+  margin-top: 420px;
   margin-left: 30px;
   padding: 20px;
  
+}
+
+.hamburguer{
+  width: 30px;
+  display: block;
+  
 }
 
 
@@ -276,7 +282,7 @@ p{
     display: block;
   }
 
-  .links {
+  .lisnks {
     display: none;
     flex-direction: column;
     
