@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Santissimo Sacramento</title>
+    <title>Grupo Terço dos Homens Mãe Rainha</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css/style.css">
-    <link rel="stylesheet" type="text/css" href="./style.css/adoração.css">
     <link rel="stylesheet" href="./style.css/terço.css">
+    <link rel="stylesheet" type="text/css" href="./style.css/orações.css">
     <link rel="stylesheet" type="text/css" href="./js/script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +17,10 @@
   </head>
   <body>
     
-    <header>
 
-     <aside id="lado_logo">
+   <header>
+      
+      <aside id="lado_logo">
 
       
      <a target="_blank" href="https://tercodoshomens.org.br/conheca/"><img class="logo" src="./imagens/terço.jpeg" alt="">Aqui</a>
@@ -28,29 +29,48 @@
  </aside>
 
        <h1 id="logo_nome">
-    Grupo Terço dos Homens Mãe Rainha 
+    Grupo Terço dos Homens Mãe Rainha
     </h1>
-
     <h3 id="nome_paroquia">
-      Paroquia São José - Granja Ce
+      Paroquia São José - Granja ce
     </h3>
-  
+   
+
     <nav class="menu">
       
-       
       <ul id="menu-links" class="links">
-       
+        
         <li><a href="index.html">Início</a></li>
         <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="depois.html">Terço</a>
+        </li>
         <li><a href="terço.html">Terço</a></li>
         
-       
-  
+   
       </ul>
     </nav>
   </header>
 
-  <section id="rezarterço">
+
+
+
+<!-- 
+<nav class="menu">
+  <div class="hamburguer" onclick="toggleMenu()">☰</div>
+ 
+</nav>
+ 
+
+
+  
+    <script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu-links');
+    menu.classList.toggle('show');
+  }
+</script> 
+-->
+<section id="rezarterço">
 
   <h1>
     Saiba como rezar o santo terço
@@ -200,24 +220,25 @@
 
 </section>
 
-
-
-
-
-
-
- 
-
+  
 
   
+
+    
+
    
+
+
+
+
+
      
 
-  
-
+  </div>
 
   <footer>
-    <p>&copy; 2025 - Grupo Terço dos Homens Mãe Rainha - Paroquia São José Granja - Ce </p><p>Granja-Ce</p>
+    <p>&copy; 2025 - Grupo Terço dos Homens Mãe Rainha - Paroquia São José Granja - Ce </p>
+    <p>Granja-Ce</p>
   </footer>
 
 
@@ -249,7 +270,12 @@
 
 
 
-
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menu-links');
+    menu.classList.toggle('show');
+  }
+</script>
  <!--pagina -->
     <!--java -->
     <script src="https://kit.fontawesome.com/7454a8b3ff.js" crossorigin="anonymous"></script>
