@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.hamburguer {
+.hamsburguer {
   font-size: 30px;
   cursor: pointer;
   display: none;
@@ -41,7 +41,7 @@
 
 /* Responsivo */
 @media (max-width: 600px) {
-  .hamburguer {
+  .hasmburguer {
     display: block;
   }
 
